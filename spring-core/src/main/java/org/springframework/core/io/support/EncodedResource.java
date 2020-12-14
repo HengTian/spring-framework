@@ -128,6 +128,7 @@ public class EncodedResource implements InputStreamSource {
 	}
 
 	/**
+	 * 当设置了编码和字符集的时候,通过该方法返回输入流
 	 * Open a {@code java.io.Reader} for the specified resource, using the specified
 	 * {@link #getCharset() Charset} or {@linkplain #getEncoding() encoding}
 	 * (if any).

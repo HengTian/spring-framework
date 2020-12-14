@@ -20,10 +20,11 @@ import org.springframework.lang.Nullable;
 
 /**
  * Interface that defines a registry for shared bean instances.
+ *
  * Can be implemented by {@link org.springframework.beans.factory.BeanFactory}
  * implementations in order to expose their singleton management facility
  * in a uniform manner.
- *
+ * 可以通过{BeanFactory}实现，以便以统一的方式公开它们的单例管理工具。
  * <p>The {@link ConfigurableBeanFactory} interface extends this interface.
  *
  * @author Juergen Hoeller
@@ -127,6 +128,7 @@ public interface SingletonBeanRegistry {
 
 	/**
 	 * Return the singleton mutex used by this registry (for external collaborators).
+	 * 给外部调用者返回一个用来注册的单例锁
 	 * @return the mutex object (never {@code null})
 	 * @since 4.2
 	 */
